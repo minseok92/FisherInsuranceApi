@@ -1,30 +1,32 @@
-import {NgModule} from '@angular/core';
-import {BrowserModule} from '@angular/platform-browser';
-import {HttpModule} from '@angular/http';
-import 'rxjs/Rx';
+import { NgModule } from '@angular/core'; 
+import { BrowserModule } from '@angular/platform-browser'; 
+import { HttpModule } from '@angular/http'; 
+import 'rxjs/Rx'; 
 
-//import our application component
-import {AppComponent} from './app.component';
-import {HomeComponent} from './components/home/home.component';
+// import our application component 
+import { AppComponent } from './app.component'; 
+import { HomeComponent } from './components/home/home.component';
+import { NavBarComponent } from './components/navbar/navbar.component';
 
-@NgModule({
-    declarations: [
+@NgModule({     
+    declarations: [         
         AppComponent,
-        HomeComponent
-    ],
-
-    imports: [
-        BrowserModule,
-        HttpModule
-    ],
-
+        HomeComponent,
+        NavBarComponent     
+    ],     
+    
+    imports: [        
+        BrowserModule,         
+        HttpModule     
+    ],     
+    
     providers: [
 
-    ],
+    ],     
+    
+    bootstrap: [         
+        AppComponent     
+    ], 
+}) 
 
-    bootstrap: [
-        AppComponent
-    ],
-})
-
-export class AppModule {}
+export class AppModule { }
