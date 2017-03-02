@@ -6,7 +6,7 @@ namespace FisherInsuranceApi.Data
     {    
          protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)        
          {            
-             string connection = "User ID=fisher-user;Password=Kmseok1423[]123 ;Host=localhost;Port=5432;Database=fisher-insurance;Pooling=true;";            
+             string connection = "User ID=fisher-user;Password=<PUT PASSWORD HERE> ;Host=localhost;Port=5432;Database=fisher-insurance;Pooling=true;";            
              optionsBuilder.UseNpgsql(connection);         
              
          }
