@@ -26,7 +26,7 @@ namespace FisherInsuranceApi.Security
         public static readonly SymmetricSecurityKey SecurityKey = new SymmetricSecurityKey(Encoding.ASCII.GetBytes(PrivateKey));
 
         public static readonly string Issuer = "FisherInsurance";
-        public static string TokenEndPoint = "api/connect/token";
+        public static string TokenEndPoint = "/api/connect/token";
 
         public JwtProvider(RequestDelegate next, FisherContext db, UserManager<ApplicationUser> userManager, SignInManager<ApplicationUser> signInManager)
         {
